@@ -217,7 +217,7 @@ body {
 
 .close-modal {
     position: absolute;
-    opacity: 0.3;
+    opacity: 1;
     top: 8px;
     right: 8px;
     width: 30px;
