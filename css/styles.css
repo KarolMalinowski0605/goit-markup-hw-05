@@ -82,26 +82,24 @@ body {
     color: var(--brand-color-leading);
     text-decoration: none;
     display: flex;
-}
-.active {
-    color: var(--brand-color-contact-hover);
-}
-
-.navigation-link:is(:hover, :focus, ) {
-    color: var(--brand-color-blue-button-hover);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.navigation-link:is(:hover, :focus, ) {
+    color: var(--brand-color-blue-button-hover);
+}
+
 .is-active {
     position: relative;
+    color: var(--brand-color-blue-button-hover);
 }
 .is-active::after {
     content: '';
     position: absolute;
+    top: 46px;
     width: 100%;
     height: 4px;
-    margin-top: 30px;
     background-color: var(--brand-color-blue-button-hover);
     border-radius: 2px;
 }
@@ -119,12 +117,12 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--brand-color-grey-text);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts > a:is(:hover, :focus) {
     color: var(--brand-color-blue-button-hover);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-icons {
@@ -134,12 +132,12 @@ body {
     gap: 10px;
     flex-direction: row-reverse;
     fill: var(--color-icons);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-icons:is(:hover, :focus) {
     fill: var(--brand-color-blue-button-hover);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .headline {
     background-color: var(--brand-color-background-footer);
@@ -223,7 +221,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: #ffffff;
+    background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
@@ -318,13 +316,13 @@ body {
     border-radius: 50%;
     padding: 12px;
     fill: #afb1b8;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social-media:is(:hover, :focus) {
     fill: var(--brand-color-white);
     background-color: var(--brand-color-blue-button-hover);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-us-img {
@@ -372,20 +370,20 @@ body {
     justify-content: space-around;
 }
 
-.icon-group {
+.icon-clients {
     border: 1px solid #afb1b8;
     border-radius: 4px;
     fill: var(--color-icons);
     cursor: pointer;
-}
-.icon-group:is(:hover, :focus) {
-    border-color: var(--brand-color-blue-button-hover);
-    fill: var(--brand-color-blue-button-hover);
-    outline: none;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-group > svg {
+.icon-clients:is(:hover, :focus) {
+    border-color: var(--brand-color-blue-button-hover);
+    fill: var(--brand-color-blue-button-hover);
+    outline: none;
+}
+.icon-clients > svg {
     width: 170px;
     height: 92px;
     padding: 16px 32px 16px 32px;
@@ -433,13 +431,13 @@ body {
     background: rgba(255, 255, 255, 0.1);
     padding: 12px;
     fill: var(--brand-color-white);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social-media-footer:is(:hover, :focus) {
     background-color: var(--brand-color-blue-button-hover);
     fill: var(--brand-color-white);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-wrapper {
@@ -467,12 +465,12 @@ body {
     color: var(--brand-color-contact-footer);
     text-decoration: none;
     width: fit-content;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-tel-footer:is(:hover, :focus) {
     color: var(--brand-color-blue-button-hover);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list {
@@ -494,13 +492,13 @@ body {
     border: none;
     border-radius: 4px;
     background-color: #f5f4fa;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:is(:hover, :focus) {
     background-color: var(--brand-color-blue-button-hover);
     color: var(--brand-color-white);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-text-list {
@@ -533,7 +531,7 @@ body {
 }
 
 .card:is(:hover, :focus) .card-animation {
-    transform: translateX(0);
+    transform: translateY(0);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
